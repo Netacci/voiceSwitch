@@ -42,7 +42,7 @@ if (isset($_POST['submit'])){
       content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"
     />
     <!-- Website description -->
-    <meta name="description" content="Hairstyle, barbershop, men, stylist" />
+    <meta name="description" content="Voice, technology" />
     <meta name="keywords" content="" />
     <!-- Website title-->
     <title>VoiceSwitch</title>
