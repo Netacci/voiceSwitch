@@ -104,6 +104,7 @@ hr {
   background: var(--white-color);
   width: 202px;
   height: 24px;
+  padding: 0 0.5rem;
 
 }
 
@@ -133,10 +134,21 @@ hr {
 .bg-danger {
   width: 61%;
   padding: 3%;
+  font-size: 1.1rem;
+  font-family: var(--title-font);
+  color: var(--text-color);
 }
 
 .bg-dangerr {
   background-color: #dc3545;
+  font-size: 1.1rem;
+  font-family: var(--title-font);
+  color: var(--text-color);
+  padding: 1%;
+}
+
+.prwa {
+  margin-bottom: -18px;
 }
 
 .btn {
@@ -151,6 +163,7 @@ hr {
   margin-left: -0.9rem;
   margin-top: -0.25rem;
   line-height: 1;
+  transition: all .3s linear;
 }
 
 .btn:focus,
@@ -160,7 +173,11 @@ hr {
 }
 
 .btn:hover {
-  opacity: 0.8;
+  opacity: 0.9;
+}
+
+.back-link {
+  line-height: 1.5;
 }
 
 /* features begin here */

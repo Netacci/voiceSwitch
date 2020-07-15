@@ -1,8 +1,8 @@
 <?php 
-$host = 'localhost';
-$dbUsername = 'root';
-$dbPassword = '';
-$dbname = 'form';
+$host = 'x40p5pp7n9rowyv6.cbetxkdyhwsb.us-east-1.rds.amazonaws.com';
+$dbUsername = 'slfsi72jjitjurgn';
+$dbPassword = 'cocaeudurrk949ef';
+$dbname = 'e5j5z097jfy6zing';
 $conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
 $success = "";
 $greater = "";
@@ -10,13 +10,11 @@ $lesser = "";
 if (isset($_POST['submit'])){
   $email = $_POST['email'];
   $email = mysqli_real_escape_string($conn, $email);
-  // echo $email;
-  // die();
   $query = "SELECT id From sublist WHERE email ='$email' ";
   $result = mysqli_query($conn, $query);
   if (mysqli_num_rows($result) > 0) {
     $greater = "<p class='bg-danger text-white'>Email already exists</p>";
-    $lesser = "<p class='bg-dangerr text-white'>Subscribe error</p>";
+    $lesser = "<p class='bg-dangerr text-white'>Subscribe error. Check email input field</p>";
 	} else{
     $query = "INSERT Into sublist (email) VALUES ('$email')" ;
     $result = mysqli_query($conn, $query);
@@ -70,23 +68,25 @@ if (isset($_POST['submit'])){
   </head>
   <body>
   
-    <!-- Preloader starts -->
-    <!-- <div id="preloader" class="preloader">
-      <div class="status"></div>
-    </div> -->
-    <!-- Preloader ends -->
-  <div class="wrapper">
-    <!-- Header starts here -->
-    <div class="">
-                <p><?php
+  
+   <div class="wrapper">
+     <!-- Header starts here -->
+     <div class="">
+        <p><?php
                   if($success!=""){
                     echo $success;
                     $success = null;
                     die();
                   }
                 ?></p>
-             </div>
-    <div class=""><?php echo $lesser;?></div>
+       </div>
+   </div>
+     <!-- Preloader starts -->
+     <div id="preloader" class="preloader">
+      <div class="status"></div>
+    </div>
+    <!-- Preloader ends -->
+    <div class="prwa text-center"><?php echo $lesser;?></div>
     <header class="main-head" id="home">
    
       <div
@@ -157,7 +157,7 @@ if (isset($_POST['submit'])){
         </div>
       </div>
     </header>
-    </div>
+    
     <!-- HEADER ENDS HERE -->
     <section class="features">
       <div class="container mt-4">
@@ -360,19 +360,19 @@ if (isset($_POST['submit'])){
       </div>
       <div class="mt-5 wow animate__bounceIn" data-wow-duration="3s">
         <div class="d-flex justify-content-center">
-          <div class="p-wrap mr-3">
+          <div class="p-wrap mr-3 px-2 py-2">
             <p class="time-text">Days</p>
             <p class="time-text timer mr-3 mt-lg-4" id="days">120</p>
           </div>
-          <div class="p-wrap mr-3">
+          <div class="p-wrap mr-3 px-2 py-2">
             <p class="time-text mr-3">Hours</p>
             <p class="time-text timer mr-3 mt-lg-4" id="hours">4</p>
           </div>
-          <div class="p-wrap mr-3">
+          <div class="p-wrap mr-3 px-2 py-2">
             <p class="time-text mr-3">Minutes</p>
             <p class="time-text timer mr-3 mt-lg-4" id="minutes">12</p>
           </div>
-          <div class="p-wrap mr-3">
+          <div class="p-wrap mr-3 px-2 py-2">
             <p class="time-text mr-3">Seconds</p>
             <p class="time-text timer mr-3 mt-lg-4" id="seconds">22</p>
           </div>
@@ -380,18 +380,6 @@ if (isset($_POST['submit'])){
       </div>
 
       <div class="inputs mt-5">
-        <!-- <p class="launch-text text-center">Get Notified</p>
-        <div>
-          <p>></p>
-        </div>
-        <form action="" method="POST" class="input-field mt-lg-3" data-aos="fade-right"
-          data-aos-duration="1000">
-          <p>
-         
-          </p>
-          <input type="email" class="sub-input" name="email" placeholder="Enter your Email address" value="<?php if(isset($_POST['submit'])){echo $email;} ?>" required/>
-          <input type="submit" class="submit-btn btn" name="submit" value="Subscribe" />
-        </form> -->
         <div class="logo-img mt-5 mb-5">
           <img src="./assets/images/logo.svg" alt="" class="logo-foot" />
         </div>
