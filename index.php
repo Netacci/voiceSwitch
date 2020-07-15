@@ -1,8 +1,8 @@
 <?php 
-$host = 'localhost';
-$dbUsername = 'root';
-$dbPassword = '';
-$dbname = 'form';
+$host = 'x40p5pp7n9rowyv6.cbetxkdyhwsb.us-east-1.rds.amazonaws.com';
+$dbUsername = 'slfsi72jjitjurgn';
+$dbPassword = 'cocaeudurrk949ef';
+$dbname = 'e5j5z097jfy6zing';
 $conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
 $success = "";
 $greater = "";
