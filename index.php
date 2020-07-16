@@ -42,7 +42,7 @@ if (isset($_POST['submit'])){
       content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"
     />
     <!-- Website description -->
-    <meta name="description" content="Hairstyle, barbershop, men, stylist" />
+    <meta name="description" content="Voice, technology" />
     <meta name="keywords" content="" />
     <!-- Website title-->
     <title>VoiceSwitch</title>
@@ -92,9 +92,8 @@ if (isset($_POST['submit'])){
       <div
         class="logo-img mt-5 mb-lg-5 wow animate__bounce"
         data-wow-duration="2s"
-        data-wow-iteration="100"
       >
-        <img src="./assets/images/logo.svg" alt="" class="logo" />
+        <img src="./assets/images/logo.svg" alt="" class="logo" loading="lazy" />
       </div>
       <hr />
       <div class="container">
@@ -111,10 +110,11 @@ if (isset($_POST['submit'])){
                 src="./assets/images/header-mockup.svg"
                 alt="mockup"
                 class="mockup w-50"
+                loading="lazy"
               />
             </div>
             <p
-              class="head-text text-center text-lg-left mt-lg-3 wow animate__fadeInUp"
+              class="head-text text-center text-lg-left mt-lg-3 wow animate__fadeInLeft"
               data-wow-duration="3s"
             >
               A call app that helps you capture voice patterns of different
@@ -128,12 +128,12 @@ if (isset($_POST['submit'])){
               source you can think of. WOW! you can decide to sound like your
               favourite Music artist while on call... AMAZING!
             </p>
-            <h1 class="launch-title mt-lg-4 text-center text-lg-left">
+            <h1 class="launch-title mt-lg-4 text-center text-lg-left wow animate__fadeInLeft" data-wow-duration="3s" >
               LAUNCHING SOON!
             </h1>
 
-            <div class="inputs mb-4 mb-lg-0 mt-lg-5">
-              <p class="launch-text text-center">Get Notified</p>
+            <div class="inputs mb-4 mb-lg-0 mt-lg-5 mt-4">
+              <p class="launch-text text-center wow animate__shakeY" data-wow-duration="3s" data-wow-iteration="100">Get Notified</p>
             
              
               <form action="" method="POST"
@@ -152,6 +152,7 @@ if (isset($_POST['submit'])){
               src="./assets/images/header-mockup.svg"
               alt="mockup"
               class="mockup img-fluid"
+              loading="lazy"
             />
           </div>
         </div>
@@ -159,29 +160,32 @@ if (isset($_POST['submit'])){
     </header>
     
     <!-- HEADER ENDS HERE -->
+    <!-- FEATURES SECTION BEGINS HERE -->
     <section class="features">
       <div class="container mt-4">
         <div class="feature-head text-center text-lg-left">
           <h2 class="feature-title">App Core Features</h2>
         </div>
         <!-- mobile slider begins here -->
-        <div class="app-features moblie-features d-lg-none row mt-lg-5 slider">
-          <div class="feat text-center px-5">
+        <div class="app-features moblie-features d-lg-none row mt-5 slider">
+          <div class="feat feat-mob text-center px-5">
             <img
               src="./assets/images/75-icon.svg"
               alt="icon"
               class="icon mt-4 mx-auto"
+              loading="lazy"
             />
             <p class="feat-title">Voice Pattern Capture</p>
             <p class="feat-text mb-5">
               Capture voice patterns within seconds from any source
             </p>
           </div>
-          <div class="feat text-center px-5">
+          <div class="feat feat-mob text-center px-5">
             <img
               src="./assets/images/phone-icon.svg"
               alt="icon"
               class="icon mt-4 mx-auto"
+              loading="lazy"
             />
             <p class="feat-title">Clonned Voice Call</p>
             <p class="feat-text mb-5">
@@ -189,11 +193,12 @@ if (isset($_POST['submit'])){
               while making calls.
             </p>
           </div>
-          <div class="feat text-center px-5">
+          <div class="feat feat-mob text-center px-5">
             <img
               src="./assets/images/mic-icon.svg"
               alt="icon"
               class="icon mt-4 mx-auto"
+              loading="lazy"
             />
             <p class="feat-title">Clonned Audio Recording</p>
             <p class="feat-text mb-5">
@@ -201,11 +206,12 @@ if (isset($_POST['submit'])){
               phone
             </p>
           </div>
-          <div class="feat text-center px-5">
+          <div class="feat feat-mob text-center px-5">
             <img
               src="./assets/images/share-icon.svg"
               alt="icon"
               class="icon mt-4 mx-auto"
+              loading="lazy"
             />
             <p class="feat-title">Share Voice Patterns</p>
             <p class="feat-text mb-5">
@@ -213,22 +219,24 @@ if (isset($_POST['submit'])){
               phone
             </p>
           </div>
-          <div class="feat text-center px-5">
+          <div class="feat feat-mob text-center px-5">
             <img
               src="./assets/images/75-icon.svg"
               alt="icon"
               class="icon mt-4 mx-auto"
+              loading="lazy"
             />
             <p class="feat-title">Voice Pattern Capture</p>
             <p class="feat-text mb-5">
               Capture voice patterns within seconds from any source
             </p>
           </div>
-          <div class="feat text-center px-5">
+          <div class="feat feat-mob text-center px-5">
             <img
               src="./assets/images/75-icon.svg"
               alt="icon"
               class="icon mt-4 mx-auto"
+              loading="lazy"
             />
             <p class="feat-title">Voice Pattern Capture</p>
             <p class="feat-text mb-5">
@@ -248,6 +256,7 @@ if (isset($_POST['submit'])){
               src="./assets/images/75-icon.svg"
               alt="icon"
               class="icon mt-4"
+              loading="lazy"
             />
             <p class="feat-title">Voice Pattern Capture</p>
             <p class="feat-text mb-5">
@@ -263,6 +272,7 @@ if (isset($_POST['submit'])){
               src="./assets/images/phone-icon.svg"
               alt="icon"
               class="icon mt-4"
+              loading="lazy"
             />
             <p class="feat-title">Clonned Voice Call</p>
             <p class="feat-text mb-5">
@@ -279,6 +289,7 @@ if (isset($_POST['submit'])){
               src="./assets/images/mic-icon.svg"
               alt="icon"
               class="icon mt-4"
+              loading="lazy"
             />
             <p class="feat-title">Clonned Audio Recording</p>
             <p class="feat-text mb-5">
@@ -294,6 +305,7 @@ if (isset($_POST['submit'])){
               src="./assets/images/share-icon.svg"
               alt="icon"
               class="icon mt-4"
+              loading="lazy"
             />
             <p class="feat-title">Share Voice Patterns</p>
             <p class="feat-text mb-5">
@@ -310,6 +322,7 @@ if (isset($_POST['submit'])){
               src="./assets/images/75-icon.svg"
               alt="icon"
               class="icon mt-4"
+              loading="lazy"
             />
             <p class="feat-title">Voice Pattern Capture</p>
             <p class="feat-text mb-5">
@@ -325,6 +338,7 @@ if (isset($_POST['submit'])){
               src="./assets/images/75-icon.svg"
               alt="icon"
               class="icon mt-4"
+              loading="lazy"
             />
             <p class="feat-title">Voice Pattern Capture</p>
             <p class="feat-text mb-5">
@@ -343,7 +357,66 @@ if (isset($_POST['submit'])){
             App Screenshots
           </h2>
         </div>
-        <div class="screens"></div>
+        <!-- screenshots mobile slider starts here -->
+        <div class="screens d-lg-none row mt-5 slider-screen justify-content-center">
+          <div class="text-center px-5">
+            <img
+              src="./assets/images/header-mockup.svg"
+              alt="icon"
+              class="icon mt-4 mx-auto img-fluid"
+              loading="lazy"
+            />
+            <p class="feat-title">Get Started</p>
+          </div>
+          <div class="text-center px-5">
+            <img
+              src="./assets/images/header-mockup.svg"
+              alt="icon"
+              class="icon mt-4 mx-auto img-fluid"
+              loading="lazy"
+            />
+            <p class="feat-title">Make call as you normally do but with different voices</p>
+          </div>
+          <div class="text-center px-5">
+            <img
+              src="./assets/images/header-mockup.svg"
+              alt="icon"
+              class="icon mt-4 mx-auto img-fluid"
+              loading="lazy"
+            />
+            <p class="feat-title">Record voice from any audio source</p>
+            
+          </div>
+          <div class="text-center px-5">
+            <img
+              src="./assets/images/header-mockup.svg"
+              alt="icon"
+              class="icon mt-4 mx-auto img-fluid"
+              loading="lazy"
+            />
+            <p class="feat-title">Record voice with over 75% accuracy</p>
+          </div>
+          <div class="text-center px-5">
+            <img
+              src="./assets/images/header-mockup.svg"
+              alt="icon"
+              class="icon mt-4 mx-auto img-fluid"
+              loading="lazy"
+            />
+            <p class="feat-title">Change or delete different voice patterns</p>
+          </div>
+          <div class="text-center px-5">
+            <img
+              src="./assets/images/header-mockup.svg"
+              alt="icon"
+              class="icon mt-4 mx-auto img-fluid"
+              loading="lazy"
+            />
+            <p class="feat-title">Save voice patterns to the cloud so you never lose them</p>
+          </div>
+        </div>
+        <!-- mobile slider for screenshots ends here -->
+        
       </div>
     </section>
     <!-- SCREENSHOT SECTION ENDS HERE -->
@@ -352,13 +425,13 @@ if (isset($_POST['submit'])){
       <div class="foot-head">
         <h1
           class="foot-title mt-5"
-          data-aos="fade-right"
+          data-aos="fade-down"
           data-aos-duration="1000"
         >
           LAUNCHING SOON
         </h1>
       </div>
-      <div class="mt-5 wow animate__bounceIn" data-wow-duration="3s">
+      <div class="mt-5 wow animate__shakeY" data-wow-duration="3s">
         <div class="d-flex justify-content-center">
           <div class="p-wrap mr-3 px-2 py-2">
             <p class="time-text">Days</p>
@@ -384,6 +457,12 @@ if (isset($_POST['submit'])){
           <img src="./assets/images/logo.svg" alt="" class="logo-foot" />
         </div>
       </div>
+      <a href="#" id="topscroll" class="top-scroll"
+              ><img
+                src="./assets/images/arrow.svg"
+                alt="scrollup"
+                class="arrow"
+            /></a>
     </footer>
   
 

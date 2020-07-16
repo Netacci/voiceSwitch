@@ -11,18 +11,7 @@
     width: 30%;
   }
 
-  .sub-input {
-    width: 404px;
-    height: 47px;
 
-  }
-
-  .btn {
-    width: 135px;
-    height: 47px;
-    font-size: 1.125rem;
-
-  }
 
   /* features */
   .feature-title::after,
@@ -33,6 +22,41 @@
   /* footer */
   .logo-foot {
     width: auto;
+  }
+
+  .top-scroll {
+    display: block;
+    transition: all .3s;
+    position: fixed;
+    pointer-events: none;
+    bottom: 50px;
+    left: 93%;
+    opacity: 0;
+  }
+
+  .top-scroll.activescroll {
+    bottom: 61px;
+    pointer-events: auto;
+    opacity: 1;
+  }
+
+  .arrow {
+    animation: scrollup 1s linear 1s infinite;
+  }
+
+  @keyframes scrollup {
+    0% {
+      transform: translate(0, 0);
+    }
+
+    50% {
+      transform: translate(0, 10px);
+    }
+
+    100% {
+      transform: translate(0, 0);
+    }
+
   }
 
 
@@ -77,10 +101,22 @@
     margin-bottom: -2rem;
   }
 
+  .sub-input {
+    height: 47px;
+
+  }
+
+  .btn {
+    height: 47px;
+    font-size: 1.125rem;
+
+  }
+
   /* features begin here */
   .feat {
     max-width: 350px !important;
     flex: auto !important;
+    box-shadow: 0px 0px 2px #000000, 0px 0px 2px #FF0000;
 
   }
 

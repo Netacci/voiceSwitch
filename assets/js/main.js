@@ -24,7 +24,7 @@ $(document).on("click", ".navbar-collapse", function (e) {
 $(".slider").slick({
   dots: false,
   infinite: true,
-  autoplay: false,
+  autoplay: true,
   loop: true,
   speed: 300,
   slidesToShow: 1,
@@ -50,7 +50,7 @@ $(".slider").slick({
     },
   ],
 });
-$(".slider-review").slick({
+$(".slider-screen").slick({
   dots: false,
   infinite: true,
   autoplay: true,
@@ -62,20 +62,10 @@ $(".slider-review").slick({
   dots: true,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 768,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true,
-        arrows: false,
-      },
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToShow: 3,
+        slidesToScroll: 3,
         dots: true,
       },
     },
