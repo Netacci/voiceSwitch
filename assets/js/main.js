@@ -24,7 +24,7 @@ $(document).on("click", ".navbar-collapse", function (e) {
 $(".slider").slick({
   dots: false,
   infinite: true,
-  autoplay: true,
+  autoplay: false,
   loop: true,
   speed: 300,
   slidesToShow: 1,
