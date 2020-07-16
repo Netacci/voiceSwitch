@@ -9,88 +9,441 @@
       content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"
     />
     <!-- Website description -->
-    <meta name="description" content="Hairstyle, barbershop, men, stylist" />
+    <meta name="description" content="Voice, technology" />
     <meta name="keywords" content="" />
     <!-- Website title-->
-    <title>Barbershop</title>
+    <title>VoiceSwitch</title>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon-precomposed" href="" />
     <!-- Google fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <!-- CSS links-->
     <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/animate.min.css" />
     <link rel="stylesheet" href="./assets/css/aos.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/slick-theme.css"/>
-    <link rel="stylesheet" type="text/css" href="./assets/css/slick.css"/>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/slick-theme.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/slick.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
-  <body data-spy="scroll" data-target="#navactive" data-offset="50"> 
+  <body>
+    <!-- Header starts here -->
+
     <!-- Preloader starts -->
     <div id="preloader" class="preloader">
       <div class="status"></div>
     </div>
     <!-- Preloader ends -->
-
-    <!-- Header starts here -->
+    <div class="prwa text-center"><?php echo $lesser;?></div>
     <header class="main-head" id="home">
-      <!-- Nav starts here -->
-      <nav id="navactive" class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container mt-lg-3 mb-lg-3">
-          <!-- <a style="font-family: HaloHandletter;" class="navbar-brand" href="#">
+      <div
+        class="logo-img mt-5 mb-lg-5 wow animate__bounce"
+        data-wow-duration="2s"
+      >
+        <img
+          src="./assets/images/logo.svg"
+          alt=""
+          class="logo"
+          loading="lazy"
+        />
+      </div>
+      <hr />
+      <div class="container">
+        <div class="head-wrap row">
+          <div class="first-text col-lg-7">
+            <h1
+              class="head-title mt-4 mt-lg-5 text-center text-lg-left wow animate__fadeInLeft"
+              data-wow-duration="3s"
+            >
+              Make calls in any voice!
+            </h1>
+            <div class="head-img mt-4 text-center d-lg-none">
+              <img
+                src="./assets/images/header-mockup.svg"
+                alt="mockup"
+                class="mockup w-50"
+                loading="lazy"
+              />
+            </div>
+            <p
+              class="head-text text-center text-lg-left mt-lg-3 wow animate__fadeInLeft"
+              data-wow-duration="3s"
+            >
+              A call app that helps you capture voice patterns of different
+              people from differnet source. It has a high end audio recording
+              technology which captures the voice patterns within seconds,
+              modifies and clones it and lets you use the cloned voice pattern
+              when you want to call your friends or contacts, thereby making it
+              possible for you to sound like anybody you want while making
+              calls.It captures voice patterns from all sources like Radio
+              broadcast, videos, music, call conversations and every other audio
+              source you can think of. WOW! you can decide to sound like your
+              favourite Music artist while on call... AMAZING!
+            </p>
+            <h1
+              class="launch-title mt-lg-4 text-center text-lg-left wow animate__fadeInLeft"
+              data-wow-duration="3s"
+            >
+              LAUNCHING SOON!
+            </h1>
+
+            <div class="inputs mb-4 mb-lg-0 mt-lg-5 mt-4">
+              <p
+                class="launch-text text-center wow animate__shakeY"
+                data-wow-duration="3s"
+                data-wow-iteration="100"
+              >
+                Get Notified
+              </p>
+
+              <form
+                action=""
+                method="POST"
+                class="input-field mt-3 text-center text-lg-left"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <input
+                  type="email"
+                  class="sub-input"
+                  name="email"
+                  placeholder="Enter your Email address"
+                  required
+                />
+                <input
+                  type="submit"
+                  class="submit-btn btn"
+                  name="submit"
+                  value="Subscribe"
+                />
+              </form>
+            </div>
+          </div>
+          <div class="head-img col-lg-5 text-center d-none d-lg-block">
             <img
-              src=""
-              class="d-inline-block align-middle mr-5"
-              alt="logo"
+              src="./assets/images/header-mockup.svg"
+              alt="mockup"
+              class="mockup img-fluid"
               loading="lazy"
             />
-          </a> -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item mr-0 mr-lg-5 ">
-                <a class="nav-link active" href="#home">Home</a>
-              </li>
-              <li class="nav-item mr-0 mr-lg-5">
-                <a class="nav-link menu-item-2" href="#services">Features</a>
-              </li>
-              <li class="nav-item mr-0 mr-lg-5">
-                <a class="nav-link menu-item-2" href="#achievement">Screenshots</a>
-              </li>
-              <li class="nav-item mr-0 mr-lg-5">
-                <a class="nav-link menu-item-3" href="#review">Reviews</a>
-              </li>
-              <li class="nav-item mr-0">
-                <a class="nav-link menu-item-4" href="#contact">Contact me</a>
-              </li>
-            </ul>
           </div>
         </div>
-      </nav>
-     
-      <!-- Nav ends here -->
+      </div>
+    </header>
 
-      <!-- Hero section begins here -->
-      <div class="hero">
-        <div class="container mb-5">
-          <h1 class="hero-text">WAITING FOR MY DESIGNER</h1>
+    <!-- HEADER ENDS HERE -->
+    <!-- FEATURES SECTION BEGINS HERE -->
+    <section class="features">
+      <div class="container mt-4">
+        <div class="feature-head text-center text-lg-left">
+          <h2 class="feature-title">App Core Features</h2>
+        </div>
+        <!-- mobile slider begins here -->
+        <div class="app-features moblie-features d-lg-none row mt-5 slider">
+          <div class="feat feat-mob text-center px-5">
+            <img
+              src="./assets/images/75-icon.svg"
+              alt="icon"
+              class="icon mt-4 mx-auto"
+              loading="lazy"
+            />
+            <p class="feat-title">Voice Pattern Capture</p>
+            <p class="feat-text mb-5">
+              Capture voice patterns within seconds from any source
+            </p>
+          </div>
+          <div class="feat feat-mob text-center px-5">
+            <img
+              src="./assets/images/phone-icon.svg"
+              alt="icon"
+              class="icon mt-4 mx-auto"
+              loading="lazy"
+            />
+            <p class="feat-title">Clonned Voice Call</p>
+            <p class="feat-text mb-5">
+              Choose whom you want to sound like from the list of voice patterns
+              while making calls.
+            </p>
+          </div>
+          <div class="feat feat-mob text-center px-5">
+            <img
+              src="./assets/images/mic-icon.svg"
+              alt="icon"
+              class="icon mt-4 mx-auto"
+              loading="lazy"
+            />
+            <p class="feat-title">Clonned Audio Recording</p>
+            <p class="feat-text mb-5">
+              Record your own audio with your favourite voice paterns on your
+              phone
+            </p>
+          </div>
+          <div class="feat feat-mob text-center px-5">
+            <img
+              src="./assets/images/share-icon.svg"
+              alt="icon"
+              class="icon mt-4 mx-auto"
+              loading="lazy"
+            />
+            <p class="feat-title">Share Voice Patterns</p>
+            <p class="feat-text mb-5">
+              You can also share voice patterns with friends directly from you
+              phone
+            </p>
+          </div>
+          <div class="feat feat-mob text-center px-5">
+            <img
+              src="./assets/images/75-icon.svg"
+              alt="icon"
+              class="icon mt-4 mx-auto"
+              loading="lazy"
+            />
+            <p class="feat-title">Voice Pattern Capture</p>
+            <p class="feat-text mb-5">
+              Capture voice patterns within seconds from any source
+            </p>
+          </div>
+          <div class="feat feat-mob text-center px-5">
+            <img
+              src="./assets/images/75-icon.svg"
+              alt="icon"
+              class="icon mt-4 mx-auto"
+              loading="lazy"
+            />
+            <p class="feat-title">Voice Pattern Capture</p>
+            <p class="feat-text mb-5">
+              Capture voice patterns within seconds from any source
+            </p>
+          </div>
+        </div>
+        <!-- mobile slider ends here -->
+        <!-- desktop features -->
+        <div class="app-features row mt-lg-5 d-none d-lg-flex">
+          <div
+            class="feat col-lg-3 text-center mr-lgg-3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <img
+              src="./assets/images/75-icon.svg"
+              alt="icon"
+              class="icon mt-4"
+              loading="lazy"
+            />
+            <p class="feat-title">Voice Pattern Capture</p>
+            <p class="feat-text mb-5">
+              Capture voice patterns within seconds from any source
+            </p>
+          </div>
+          <div
+            class="feat col-lg-3 text-center mr-lgg-3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <img
+              src="./assets/images/phone-icon.svg"
+              alt="icon"
+              class="icon mt-4"
+              loading="lazy"
+            />
+            <p class="feat-title">Clonned Voice Call</p>
+            <p class="feat-text mb-5">
+              Choose whom you want to sound like from the list of voice patterns
+              while making calls.
+            </p>
+          </div>
+          <div
+            class="feat col-lg-3 text-center feat3 mr-lgg-3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <img
+              src="./assets/images/mic-icon.svg"
+              alt="icon"
+              class="icon mt-4"
+              loading="lazy"
+            />
+            <p class="feat-title">Clonned Audio Recording</p>
+            <p class="feat-text mb-5">
+              Record audio of anyone and from any source
+            </p>
+          </div>
+          <div
+            class="feat col-lg-3 text-center mt-lg-5 mr-lgg-3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <img
+              src="./assets/images/share-icon.svg"
+              alt="icon"
+              class="icon mt-4"
+              loading="lazy"
+            />
+            <p class="feat-title">Share Voice Patterns</p>
+            <p class="feat-text mb-5">
+              You can also share voice patterns with friends directly from you
+              phone
+            </p>
+          </div>
+          <div
+            class="feat col-lg-3 text-center mt-lg-5 mr-lgg-3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <img
+              src="./assets/images/75-icon.svg"
+              alt="icon"
+              class="icon mt-4"
+              loading="lazy"
+            />
+            <p class="feat-title">Voice Pattern Capture</p>
+            <p class="feat-text mb-5">
+              Capture voice patterns within seconds from any source
+            </p>
+          </div>
+          <div
+            class="feat col-lg-3 text-center mt-lg-5"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <img
+              src="./assets/images/75-icon.svg"
+              alt="icon"
+              class="icon mt-4"
+              loading="lazy"
+            />
+            <p class="feat-title">Voice Pattern Capture</p>
+            <p class="feat-text mb-5">
+              Capture voice patterns within seconds from any source
+            </p>
+          </div>
         </div>
       </div>
+    </section>
+    <!-- FEATURES SECTION ENDS HERE -->
+    <!-- SCREENSHOT SECTION STARTS HERE -->
+    <section class="screenshots">
+      <div class="container mt-5">
+        <div class="screenshot-head text-center text-lg-right">
+          <h2 class="screenshot-title">
+            App Screenshots
+          </h2>
+        </div>
+        <!-- screenshots mobile slider starts here -->
+        <div
+          class="screens d-lg-none row mt-5 slider-screen justify-content-center"
+        >
+          <div class="text-center px-5">
+            <img
+              src="./assets/images/header-mockup.svg"
+              alt="icon"
+              class="icon mt-4 mx-auto img-fluid"
+              loading="lazy"
+            />
+            <p class="feat-title">Get Started</p>
+          </div>
+          <div class="text-center px-5">
+            <img
+              src="./assets/images/header-mockup.svg"
+              alt="icon"
+              class="icon mt-4 mx-auto img-fluid"
+              loading="lazy"
+            />
+            <p class="feat-title">
+              Make call as you normally do but with different voices
+            </p>
+          </div>
+          <div class="text-center px-5">
+            <img
+              src="./assets/images/header-mockup.svg"
+              alt="icon"
+              class="icon mt-4 mx-auto img-fluid"
+              loading="lazy"
+            />
+            <p class="feat-title">Record voice from any audio source</p>
+          </div>
+          <div class="text-center px-5">
+            <img
+              src="./assets/images/header-mockup.svg"
+              alt="icon"
+              class="icon mt-4 mx-auto img-fluid"
+              loading="lazy"
+            />
+            <p class="feat-title">Record voice with over 75% accuracy</p>
+          </div>
+          <div class="text-center px-5">
+            <img
+              src="./assets/images/header-mockup.svg"
+              alt="icon"
+              class="icon mt-4 mx-auto img-fluid"
+              loading="lazy"
+            />
+            <p class="feat-title">Change or delete different voice patterns</p>
+          </div>
+          <div class="text-center px-5">
+            <img
+              src="./assets/images/header-mockup.svg"
+              alt="icon"
+              class="icon mt-4 mx-auto img-fluid"
+              loading="lazy"
+            />
+            <p class="feat-title">
+              Save voice patterns to the cloud so you never lose them
+            </p>
+          </div>
+        </div>
+        <!-- mobile slider for screenshots ends here -->
+      </div>
+    </section>
+    <!-- SCREENSHOT SECTION ENDS HERE -->
+    <!-- FOOTER STARTS HERE -->
+    <footer class="footer text-center">
+      <div class="foot-head">
+        <h1
+          class="foot-title mt-5"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
+          LAUNCHING SOON
+        </h1>
+      </div>
+      <div class="mt-5 wow animate__shakeY" data-wow-duration="3s">
+        <div class="d-flex justify-content-center">
+          <div class="p-wrap mr-3 px-2 py-2">
+            <p class="time-text">Days</p>
+            <p class="time-text timer mr-3 mt-lg-4" id="days">120</p>
+          </div>
+          <div class="p-wrap mr-3 px-2 py-2">
+            <p class="time-text mr-3">Hours</p>
+            <p class="time-text timer mr-3 mt-lg-4" id="hours">4</p>
+          </div>
+          <div class="p-wrap mr-3 px-2 py-2">
+            <p class="time-text mr-3">Minutes</p>
+            <p class="time-text timer mr-3 mt-lg-4" id="minutes">12</p>
+          </div>
+          <div class="p-wrap mr-3 px-2 py-2">
+            <p class="time-text mr-3">Seconds</p>
+            <p class="time-text timer mr-3 mt-lg-4" id="seconds">22</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="inputs mt-5">
+        <div class="logo-img mt-5 mb-5">
+          <img src="./assets/images/logo.svg" alt="" class="logo-foot" />
+        </div>
+      </div>
+      <a href="#" id="topscroll" class="top-scroll"
+        ><img src="./assets/images/arrow.svg" alt="scrollup" class="arrow"
+      /></a>
+    </footer>
 
     <!-- All javascript at the bottom of the page for fast page load -->
     <!-- Jquery -->

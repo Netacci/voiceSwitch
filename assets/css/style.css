@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-
 * {
   padding: 0;
   margin: 0;
@@ -7,23 +5,25 @@
   scroll-behavior: smooth;
 }
 
+
 :root {
-  --text-font: 'Lato', sans-serif;
-  --title-font: 'Merriweather', serif;
-  --bg-color: #141313;
+  --text-font: 'Poppins', sans-serif;
+  --title-font: 'Roboto', sans-serif;
+  --title-color: #141313;
   --primary-color: #ff0000;
+  --head-title: #FF1F1F;
   --white-color: #fff;
-  --text-color: #E5E5E5;
-  --nav-bg: rgba(1, 1, 1, 0.53);
-  --line-color: #C4C4C4;
-  --grey-color: #B5B4B3;
-  --darker-blue: #1C2027;
-  --dark-line: #293B44;
+  --text-color: #DADADA;
+  --line-color: #B4B3B3;
+  --feature-title: #E10606;
+  --black: #000;
+  --app-title: #FF0101;
+  --grey: #2B2A2A;
 
 }
 
 #preloader {
-  background: var(--bg-color);
+  background: var(--title-color);
   position: fixed;
   top: 0;
   left: 0;
@@ -40,70 +40,293 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -140px;
+  margin-left: -100px;
   margin-top: -117px;
 }
 
 /* PRELOADER ENDS */
-body {
-  position: relative;
-}
 
 /* HEADER STARTS */
 .main-head {
-
   height: 100%;
+  background: var(--title-color);
+  padding: 1px;
 
 }
 
-.navbar-dark .navbar-nav .nav-link {
-  color: var(--text-color);
-  font-size: 0.875rem;
-  font-family: var(--text-font);
-}
-
-.navbar-dark .navbar-toggler-icon {
-  background-image: url(../images/Breadcomb.svg)
-}
-
-.navbar-collapse {
-  background: var(--bg-color);
-}
-
-.navbar-nav {
+.logo-img {
   text-align: center;
+
 }
 
-
-
-.navbar-dark .navbar-nav .active>.nav-link,
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link.show,
-.navbar-dark .navbar-nav .show>.nav-link {
-  color: var(--primary-color);
+hr {
+  background: var(--line-color);
+  width: 60%;
+  margin: 1rem auto;
+  border: 2px solid #B4B3B3;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover,
-.nav-link:focus {
-  color: var(--primary-color);
-}
-
-.navbar.navscroll {
-  background: var(--nav-bg);
-  max-height: 116px;
-  z-index: 10;
-}
-
-/* Hero section begins */
-.hero {
-  margin-top: 20%;
-  text-align: center;
-}
-
-.hero-text {
-  color: var(--primary-color);
-  font-weight: bold;
+.head-title {
+  color: var(--white-color);
   font-family: var(--text-font);
+  font-weight: 500;
   font-size: 1.5rem;
-  line-height: 17px;
+}
+
+.head-text {
+  font-family: var(--text-font);
+  font-style: normal;
+  font-weight: normal;
+  color: var(--text-color);
+  font-size: 0.625rem;
+  line-height: 26px;
+}
+
+.launch-title {
+  color: var(--head-title);
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+
+}
+
+.launch-text {
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: bold;
+  color: var(--white-color);
+  font-size: 0.75rem;
+
+}
+
+.sub-input {
+  background: var(--white-color);
+  width: 100%;
+  height: 42px;
+  padding: 0 0.5rem;
+
+}
+
+.sub-input:focus {
+  outline: 0;
+}
+
+.wrapper {
+  padding: 1px;
+  background: var(--title-color);
+}
+
+.success-p {
+  font-size: 2rem;
+  font-family: var(--title-font);
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.bg-success {
+  width: 80%;
+  margin: auto;
+  padding: 5%;
+  background-color: var(--title-color) !important;
+}
+
+.bg-danger {
+  width: 61%;
+  padding: 3%;
+  font-size: 1.1rem;
+  font-family: var(--title-font);
+  color: var(--text-color);
+}
+
+.bg-dangerr {
+  background-color: #dc3545;
+  font-size: 1.1rem;
+  font-family: var(--title-font);
+  color: var(--text-color);
+  padding: 1%;
+}
+
+.prwa {
+  margin-bottom: -18px;
+}
+
+.btn {
+  background: var(--primary-color);
+  color: var(--white-color);
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.625rem;
+  width: 36%;
+  height: 42px;
+  margin-top: 1rem;
+  line-height: 1;
+  transition: all .3s linear;
+  border-radius: none;
+}
+
+.btn:focus,
+.btn:active {
+  outline: 0;
+  box-shadow: none;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.back-link {
+  line-height: 1.5;
+}
+
+/* features begin here */
+.features {
+  padding: 1px;
+}
+
+.feature-title,
+.screenshot-title {
+  color: var(--title-color);
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: bold;
+  position: relative;
+  font-size: 1.125rem;
+}
+
+.feature-title::after {
+  content: '';
+  position: absolute;
+  width: 87px;
+  height: 4px;
+  background: var(--primary-color);
+  top: 23px;
+  left: 156px;
+}
+
+.feat-mob {
+  border: 1px solid var(--grey);
+  box-shadow: none;
+}
+
+.feat-title {
+  color: var(--app-title);
+  font-family: var(--text-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.75;
+}
+
+.feat-text {
+  font-family: var(--text-font);
+  color: var(--black);
+  font-style: normal;
+  font-weight: 500;
+  font-weight: 0.625rem;
+}
+
+.slick-dots li {
+  width: 22px;
+  height: 14px;
+  background: var(--grey);
+}
+
+.slick-dots li.slick-active button:before {
+  background: var(--primary-color);
+  opacity: 1;
+  color: var(--primary-color);
+}
+
+.slick-dots li button {
+  width: 22px;
+  height: 14px;
+  color: transparent;
+  background: var(--grey);
+}
+
+.slick-dots li.slick-active button:before {
+  background: var(--primary-color);
+  opacity: 1;
+  color: var(--primary-color);
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: black;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  opacity: 1;
+}
+
+.slick-dots li button:before {
+  width: 22px;
+  height: 14px;
+  content: '';
+  text-align: center;
+  opacity: 1;
+  color: black;
+}
+
+
+/* Feature section ends */
+/* Screenshot section ends */
+.screenshots {
+  padding: 1px;
+}
+
+.screenshot-title::after {
+  content: '';
+  position: absolute;
+  width: 87px;
+  height: 4px;
+  background: var(--primary-color);
+  top: 23px;
+  left: 156px;
+}
+
+/* Screenshot ends here */
+/* footer begins here */
+.footer {
+  padding: 1px;
+  background: var(--title-color);
+}
+
+.foot-title {
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: bold;
+  color: var(--white-color);
+  font-size: 1.5rem;
+
+}
+
+.time-text {
+  color: var(--text-color);
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.75rem;
+  line-height: 22px;
+}
+
+.timer {
+
+  font-family: var(--title-font);
+  font-size: 1.5rem;
+  line-height: 16px;
+}
+
+.p-wrap {
+  background: var(--grey);
+}
+
+.logo-foot {
+  width: 34%;
+}
+
+.top-scroll {
+  display: none;
 }

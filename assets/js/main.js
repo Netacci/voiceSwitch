@@ -1,20 +1,18 @@
 const topScroll = document.querySelector(".top-scroll");
-const nav = document.querySelector(".navbar");
 
 // backTotop scroll
 window.addEventListener("scroll", () => {
   if (window.pageYOffset > 50) {
     topScroll.classList.add("activescroll");
-    nav.classList.add("navscroll");
   } else {
     topScroll.classList.remove("activescroll");
-    nav.classList.remove("navscroll");
   }
 });
 //preloader
 $(window).on("load", function () {
   $(".status").fadeOut();
   $("#preloader").delay(500).fadeOut();
+  $(".logo-img").addClass("animate__animated animate__bounce");
 });
 //collapse nav window
 $(document).on("click", ".navbar-collapse", function (e) {
@@ -29,26 +27,16 @@ $(".slider").slick({
   autoplay: true,
   loop: true,
   speed: 300,
-  slidesToShow: 3,
-  slidesToScroll: 3,
+  slidesToShow: 1,
+  slidesToScroll: 1,
   arrows: false,
   dots: true,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 768,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
-        infinite: true,
-        dots: true,
-        arrows: false,
-      },
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
         dots: true,
       },
     },
@@ -60,12 +48,9 @@ $(".slider").slick({
         dots: true,
       },
     },
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ],
 });
-$(".slider-review").slick({
+$(".slider-screen").slick({
   dots: false,
   infinite: true,
   autoplay: true,
@@ -77,20 +62,10 @@ $(".slider-review").slick({
   dots: true,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 768,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true,
-        arrows: false,
-      },
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToShow: 3,
+        slidesToScroll: 3,
         dots: true,
       },
     },
@@ -102,8 +77,28 @@ $(".slider-review").slick({
         dots: true,
       },
     },
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ],
 });
+function countdown() {
+  let now = new Date();
+  let eventDate = new Date(now.getFullYear(), 12, 25);
+  let currentTime = now.getTime();
+  let eventTime = eventDate.getTime();
+  var remTime = eventTime - currentTime;
+  let s = Math.floor(remTime / 1000);
+  let m = Math.floor(s / 60);
+  let h = Math.floor(m / 60);
+  let d = Math.floor(h / 24);
+  h %= 24;
+  m %= 60;
+  s %= 60;
+  h = h < 10 ? "0" + h : h;
+  m = m < 10 ? "0" + m : m;
+  s = s < 10 ? "0" + s : s;
+  document.getElementById("days").textContent = d;
+  document.getElementById("hours").textContent = h;
+  document.getElementById("minutes").textContent = m;
+  document.getElementById("seconds").textContent = s;
+  setTimeout(countdown, 1000);
+}
+countdown();
