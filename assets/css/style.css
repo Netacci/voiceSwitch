@@ -173,7 +173,8 @@ hr {
 }
 
 .btn:hover {
-  opacity: 0.9;
+  opacity: 0.7;
+  color: var(--line-color);
 }
 
 .back-link {
@@ -206,7 +207,7 @@ hr {
 }
 
 .feat-mob {
-  border: 1px solid var(--grey);
+  border: 5px solid var(--grey);
   box-shadow: none;
 }
 
@@ -224,6 +225,31 @@ hr {
   font-style: normal;
   font-weight: 500;
   font-weight: 0.625rem;
+}
+
+.lightboxOverlay {
+  outline: 0;
+}
+
+.lb-outerContainer {
+  background: none;
+}
+
+.lightbox .lb-image {
+  border: none;
+}
+
+.lb-data .lb-caption {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--head-title);
+  font-family: var(--text-font);
+}
+
+.slick-slide,
+.slick-slide:active,
+.slick-slide:focus {
+  outline: 0;
 }
 
 .slick-dots li {
@@ -285,6 +311,10 @@ hr {
   background: var(--primary-color);
   top: 23px;
   left: 156px;
+}
+
+.img-flui {
+  width: 80%;
 }
 
 /* Screenshot ends here */
