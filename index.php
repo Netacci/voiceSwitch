@@ -54,6 +54,7 @@ if (isset($_POST['submit'])){
       rel="stylesheet"
     />
     <!-- CSS links-->
+    <link href="./assets/css/lightbox.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/animate.min.css" />
     <link rel="stylesheet" href="./assets/css/aos.css" />
@@ -117,16 +118,17 @@ if (isset($_POST['submit'])){
               class="head-text text-center text-lg-left mt-lg-3 wow animate__fadeInLeft"
               data-wow-duration="3s"
             >
-              A call app that helps you capture voice patterns of different
-              people from differnet source. It has a high end audio recording
-              technology which captures the voice patterns within seconds,
-              modifies and clones it and lets you use the cloned voice pattern
-              when you want to call your friends or contacts, thereby making it
-              possible for you to sound like anybody you want while making
-              calls.It captures voice patterns from all sources like Radio
-              broadcast, videos, music, call conversations and every other audio
-              source you can think of. WOW! you can decide to sound like your
-              favourite Music artist while on call... AMAZING!
+            voiceSwitch is a voice call app that allows you to make calls in any
+              voice of your choosing. It captures voice patterns of different
+              people from different sources and has a high end audio recording
+              technology that clones these voice patterns in seconds. The saved
+              cloned voice patterns can be used during phone calls, thereby
+              making it possible for you to sound like anyone you want!. There
+              is no limit as to where voice patterns can be captured from, it
+              coould be directly during a call, from the television, radio or
+              even just a random face to face conversation with someone. This
+              means you can sound like just anyone over the phone and your
+              friends wouldn't be able to tell!
             </p>
             <h1 class="launch-title mt-lg-4 text-center text-lg-left wow animate__fadeInLeft" data-wow-duration="3s" >
               LAUNCHING SOON!
@@ -358,64 +360,229 @@ if (isset($_POST['submit'])){
           </h2>
         </div>
         <!-- screenshots mobile slider starts here -->
-        <div class="screens d-lg-none row mt-5 slider-screen justify-content-center">
+        <div
+          class="screens d-lg-none row mt-5 slider-screen justify-content-center"
+        >
           <div class="text-center px-5">
-            <img
-              src="./assets/images/header-mockup.svg"
-              alt="icon"
-              class="icon mt-4 mx-auto img-fluid"
-              loading="lazy"
-            />
-            <p class="feat-title">Get Started</p>
+            <a
+              href="./assets/images/header-mockup.svg"
+              data-lightbox="screenshots"
+              data-title="Login to Get Started"
+            >
+              <img
+                src="./assets/images/header-mockup.svg"
+                alt="icon"
+                class="icon mt-4 mx-auto img-flui"
+                loading="lazy"
+              />
+            </a>
+
+            <p class="feat-title">Login to Get Started</p>
           </div>
           <div class="text-center px-5">
-            <img
-              src="./assets/images/header-mockup.svg"
-              alt="icon"
-              class="icon mt-4 mx-auto img-fluid"
-              loading="lazy"
-            />
-            <p class="feat-title">Make call as you normally do but with different voices</p>
+            <a
+              href="./assets/images/header-mockup.svg"
+              data-lightbox="screenshots"
+              data-title="Login to Get Started"
+            >
+              <img
+                src="./assets/images/header-mockup.svg"
+                alt="icon"
+                class="icon mt-4 mx-auto img-flui"
+                loading="lazy"
+              />
+            </a>
+            <p class="feat-title">
+              Make call as you normally do but with different voices
+            </p>
           </div>
           <div class="text-center px-5">
-            <img
-              src="./assets/images/header-mockup.svg"
-              alt="icon"
-              class="icon mt-4 mx-auto img-fluid"
-              loading="lazy"
-            />
+            <a
+              href="./assets/images/header-mockup.svg"
+              data-lightbox="screenshots"
+              data-title="Login to Get Started"
+            >
+              <img
+                src="./assets/images/header-mockup.svg"
+                alt="icon"
+                class="icon mt-4 mx-auto img-flui"
+                loading="lazy"
+              />
+            </a>
             <p class="feat-title">Record voice from any audio source</p>
-            
           </div>
           <div class="text-center px-5">
-            <img
-              src="./assets/images/header-mockup.svg"
-              alt="icon"
-              class="icon mt-4 mx-auto img-fluid"
-              loading="lazy"
-            />
+            <a
+              href="./assets/images/header-mockup.svg"
+              data-lightbox="screenshots"
+              data-title="Login to Get Started"
+            >
+              <img
+                src="./assets/images/header-mockup.svg"
+                alt="icon"
+                class="icon mt-4 mx-auto img-flui"
+                loading="lazy"
+              />
+            </a>
             <p class="feat-title">Record voice with over 75% accuracy</p>
           </div>
           <div class="text-center px-5">
-            <img
-              src="./assets/images/header-mockup.svg"
-              alt="icon"
-              class="icon mt-4 mx-auto img-fluid"
-              loading="lazy"
-            />
+            <a
+              href="./assets/images/header-mockup.svg"
+              data-lightbox="screenshots"
+              data-title="Login to Get Started"
+            >
+              <img
+                src="./assets/images/header-mockup.svg"
+                alt="icon"
+                class="icon mt-4 mx-auto img-flui"
+                loading="lazy"
+              />
+            </a>
             <p class="feat-title">Change or delete different voice patterns</p>
           </div>
           <div class="text-center px-5">
-            <img
-              src="./assets/images/header-mockup.svg"
-              alt="icon"
-              class="icon mt-4 mx-auto img-fluid"
-              loading="lazy"
-            />
-            <p class="feat-title">Save voice patterns to the cloud so you never lose them</p>
+            <a
+              href="./assets/images/header-mockup.svg"
+              data-lightbox="screenshots"
+              data-title="Login to Get Started"
+            >
+              <img
+                src="./assets/images/header-mockup.svg"
+                alt="icon"
+                class="icon mt-4 mx-auto img-flui"
+                loading="lazy"
+              />
+            </a>
+            <p class="feat-title">
+              Save voice patterns to the cloud so you never lose them
+            </p>
           </div>
         </div>
         <!-- mobile slider for screenshots ends here -->
+       <!-- Desktop screenshots starts here -->
+       <div class="screens d-none d-lg-flex row mt-5 justify-content-center">
+          <div
+            class="text-center col-4"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <a
+              href="./assets/images/header-mockup.svg"
+              data-lightbox="desk-screenshots"
+              data-title="Login to Get Started"
+            >
+              <img
+                src="./assets/images/header-mockup.svg"
+                alt="icon"
+                class="icon mt-4 mx-auto img-flui"
+                loading="lazy"
+              />
+            </a>
+
+            <p class="feat-title">Get Started</p>
+          </div>
+          <div
+            class="text-center col-4"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <a
+              href="./assets/images/header-mockup.svg"
+              data-lightbox="desk-screenshots"
+              data-title="Login to Get Started"
+            >
+              <img
+                src="./assets/images/header-mockup.svg"
+                alt="icon"
+                class="icon mt-4 mx-auto img-flui"
+                loading="lazy"
+              />
+            </a>
+            <p class="feat-title">
+              Make call as you normally do but with different voices
+            </p>
+          </div>
+          <div
+            class="text-center col-4"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <a
+              href="./assets/images/header-mockup.svg"
+              data-lightbox="desk-screenshots"
+              data-title="Login to Get Started"
+            >
+              <img
+                src="./assets/images/header-mockup.svg"
+                alt="icon"
+                class="icon mt-4 mx-auto img-flui"
+                loading="lazy"
+              />
+            </a>
+            <p class="feat-title">Record voice from any audio source</p>
+          </div>
+          <div
+            class="text-center col-4"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <a
+              href="./assets/images/header-mockup.svg"
+              data-lightbox="desk-screenshots"
+              data-title="Login to Get Started"
+            >
+              <img
+                src="./assets/images/header-mockup.svg"
+                alt="icon"
+                class="icon mt-4 mx-auto img-flui"
+                loading="lazy"
+              />
+            </a>
+            <p class="feat-title">Record voice with over 75% accuracy</p>
+          </div>
+          <div
+            class="text-center col-4"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <a
+              href="./assets/images/header-mockup.svg"
+              data-lightbox="desk-screenshots"
+              data-title="Login to Get Started"
+            >
+              <img
+                src="./assets/images/header-mockup.svg"
+                alt="icon"
+                class="icon mt-4 mx-auto img-flui"
+                loading="lazy"
+              />
+            </a>
+            <p class="feat-title">Change or delete different voice patterns</p>
+          </div>
+          <div
+            class="text-center col-4"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <a
+              href="./assets/images/header-mockup.svg"
+              data-lightbox="desk-screenshots"
+              data-title="Login to Get Started"
+            >
+              <img
+                src="./assets/images/header-mockup.svg"
+                alt="icon"
+                class="icon mt-4 mx-auto img-flui"
+                loading="lazy"
+              />
+            </a>
+            <p class="feat-title">
+              Save voice patterns to the cloud so you never lose them
+            </p>
+          </div>
+        </div>
+        <!-- desktop screenshots ends here -->
         
       </div>
     </section>
@@ -469,6 +636,8 @@ if (isset($_POST['submit'])){
     <!-- All javascript at the bottom of the page for fast page load -->
     <!-- Jquery -->
     <script src="./assets/js/jquery/jquery-3.5.1.min.js"></script>
+     <!-- lightbox -->
+     <script src="./assets/js/lightbox.min.js"></script>
     <!-- Popper -->
     <script src="./assets/js/popper/popper.min.js"></script>
     <!-- Bootstrap -->
