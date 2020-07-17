@@ -174,11 +174,11 @@ if (isset($_POST['submit'])){
             <img
               src="./assets/images/75-icon.svg"
               alt="icon"
-              class="icon mt-3 mx-auto"
+              class="icon-feat mt-4 mx-auto"
               loading="lazy"
             />
-            <p class="feat-title mt-2">Voice Pattern Capture</p>
-            <p class="feat-text mb-5">
+            <p class="feat-title mt-4">Voice Pattern Capture</p>
+            <p class="feat-text mb-5 mt-4">
               Capture voice patterns within seconds from any source
             </p>
           </div>
@@ -186,7 +186,7 @@ if (isset($_POST['submit'])){
             <img
               src="./assets/images/phone-icon.svg"
               alt="icon"
-              class="icon mt-4 mx-auto"
+              class="icon-feat mt-4 mx-auto"
               loading="lazy"
             />
             <p class="feat-title mt-3">Clonned Voice Call</p>
@@ -199,11 +199,11 @@ if (isset($_POST['submit'])){
             <img
               src="./assets/images/mic-icon.svg"
               alt="icon"
-              class="icon mt-4 mx-auto"
+              class="icon-feat mt-4 mx-auto"
               loading="lazy"
             />
             <p class="feat-title mt-4">Clonned Audio Recording</p>
-            <p class="feat-text mb-5 mt-4">
+            <p class="feat-text mb-5 mt-3">
               Record audio from anywhere and at anytime
             </p>
           </div>
@@ -211,7 +211,7 @@ if (isset($_POST['submit'])){
             <img
               src="./assets/images/share-icon.svg"
               alt="icon"
-              class="icon mt-4 mx-auto"
+              class="icon-feat mt-4 mx-auto"
               loading="lazy"
             />
             <p class="feat-title mt-3">Share Voice Patterns</p>
@@ -224,7 +224,7 @@ if (isset($_POST['submit'])){
             <img
               src="./assets/images/switch.svg"
               alt="icon"
-              class="icon mt-4 mx-auto mt-5"
+              class="icon-feat mt-4 mx-auto mt-4"
               loading="lazy"
             />
             <p class="feat-title mt-5">Switch Voice Patterns</p>
@@ -236,10 +236,10 @@ if (isset($_POST['submit'])){
             <img
               src="./assets/images/delete.svg"
               alt="icon"
-              class="icon mt-4 mx-auto"
+              class="icon-feat mt-4 mx-auto"
               loading="lazy"
             />
-            <p class="feat-title mt-3">Delete Voice Patterns</p>
+            <p class="feat-title mt-4">Delete Voice Patterns</p>
             <p class="feat-text mb-5">
               Delete voice patterns whenever you like and record again
             </p>
@@ -256,7 +256,7 @@ if (isset($_POST['submit'])){
             <img
               src="./assets/images/75-icon.svg"
               alt="icon"
-              class="icon mt-4"
+              class="icon-feat mt-4"
               loading="lazy"
             />
             <p class="feat-title mt-3">Voice Pattern Capture</p>
@@ -272,7 +272,7 @@ if (isset($_POST['submit'])){
             <img
               src="./assets/images/phone-icon.svg"
               alt="icon"
-              class="icon mt-4"
+              class="icon-feat mt-4"
               loading="lazy"
             />
             <p class="feat-title mt-3">Clonned Voice Call</p>
@@ -289,12 +289,12 @@ if (isset($_POST['submit'])){
             <img
               src="./assets/images/mic-icon.svg"
               alt="icon"
-              class="icon mt-4"
+              class="icon-feat mt-4"
               loading="lazy"
             />
             <p class="feat-title mt-3">Clonned Audio Recording</p>
             <p class="feat-text mb-5">
-            Record audio from anywhere and at anytime
+              Record audio from anywhere and at anytime
             </p>
           </div>
           <div
@@ -305,7 +305,7 @@ if (isset($_POST['submit'])){
             <img
               src="./assets/images/share-icon.svg"
               alt="icon"
-              class="icon mt-4"
+              class="icon-feat mt-4"
               loading="lazy"
             />
             <p class="feat-title mt-3">Share Voice Patterns</p>
@@ -322,7 +322,7 @@ if (isset($_POST['submit'])){
             <img
               src="./assets/images/switch.svg"
               alt="icon"
-              class="icon mt-5"
+              class="icon-feat mt-5"
               loading="lazy"
             />
             <p class="feat-title mt-5">Switch Voice Patterns</p>
@@ -338,12 +338,12 @@ if (isset($_POST['submit'])){
             <img
               src="./assets/images/delete.svg"
               alt="icon"
-              class="icon mt-4"
+              class="icon-feat mt-4"
               loading="lazy"
             />
             <p class="feat-title mt-3">Delete Voice Patterns</p>
             <p class="feat-text mb-5">
-            Delete voice patterns whenever you like and record again
+              Delete voice patterns whenever you like and record again
             </p>
           </div>
         </div>
