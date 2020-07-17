@@ -78,7 +78,7 @@ hr {
   font-style: normal;
   font-weight: normal;
   color: var(--text-color);
-  font-size: 0.625rem;
+  font-size: 0.875rem;
   line-height: 26px;
 }
 
@@ -96,7 +96,7 @@ hr {
   font-style: normal;
   font-weight: bold;
   color: var(--white-color);
-  font-size: 0.75rem;
+  font-size: 1rem;
 
 }
 
@@ -157,7 +157,7 @@ hr {
   font-family: var(--title-font);
   font-style: normal;
   font-weight: bold;
-  font-size: 0.625rem;
+  font-size: 0.875rem;
   width: 36%;
   height: 42px;
   margin-top: 1rem;
@@ -216,7 +216,7 @@ hr {
   font-family: var(--text-font);
   font-style: normal;
   font-weight: bold;
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 
 .feat-text {
@@ -224,7 +224,7 @@ hr {
   color: var(--black);
   font-style: normal;
   font-weight: 500;
-  font-size: 0.625rem;
+  font-size: 0.875rem;
 }
 
 .lightboxOverlay {
