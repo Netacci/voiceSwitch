@@ -211,6 +211,10 @@ hr {
   box-shadow: none;
 }
 
+.icon-feat {
+  width: 20%;
+}
+
 .feat-title {
   color: var(--app-title);
   font-family: var(--text-font);
